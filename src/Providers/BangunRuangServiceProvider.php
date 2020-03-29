@@ -13,7 +13,7 @@ class BangunRuangServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('persegi-panjang', \Fajarwzdev\BangunRuang\Helpers\PersegiPanjang::class);
+        $this->app->bind('persegi-panjang', \Fajarwz\BangunRuang\Helpers\PersegiPanjang::class);
     }
 
     /**

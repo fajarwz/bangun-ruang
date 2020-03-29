@@ -4,8 +4,11 @@
     "type": "library",
     "version": "1.0",
     "require": {
-        "php": "7.2.5",
+        "php": "7.3.15",
         "illuminate/support": "7.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
     },
     "license": "MIT",
     "authors": [
@@ -21,14 +24,19 @@
             "Fajarwz\\BangunRuang\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Fajarwz\\BangunRuang\\Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Fajarwz\\BangunRuang\\Providers\\BangunRuangServiceProvider"
-            ]
-        },
-        "aliases": {
-            "PersegiPanjang": "Fajarwz\\BangunRuang\\Facades\\PersegiPanjang"
+            ],
+            "aliases": {
+                "PersegiPanjang": "Fajarwz\\BangunRuang\\Facades\\PersegiPanjang"
+            }
         }
     }
 }
