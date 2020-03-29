@@ -1,0 +1,34 @@
+{
+    "name": "fajarwz/bangun-ruang",
+    "description": "menghitung bangun ruang",
+    "type": "library",
+    "version": "1.0",
+    "require": {
+        "php": "7.2.5",
+        "illuminate/support": "7.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fajarwz",
+            "email": "fajarwindhuzulfikar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Fajarwz\\BangunRuang\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fajarwz\\BangunRuang\\Providers\\BangunRuangServiceProvider"
+            ]
+        },
+        "aliases": {
+            "PersegiPanjang": "Fajarwz\\BangunRuang\\Facades\\PersegiPanjang"
+        }
+    }
+}
